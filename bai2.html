@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // đề bài:Viết chương trình khai báo mảng gồm các thành phần ngẫu nhiên, 
+        // xây dựng hàm nhận có tham số là 1 mảng và 
+        // kết quả trả về là phần tử có độ dài lớn nhất trong mảng đó. 
+        // Gọi hàm với mảng đã khai báo và in kết quả ra màn hình.
+        function timDoDaiMang(array){
+            var max =mang[0].length;
+            var ketQua = 0;
+            for (i = 0; i < array.length; i++){
+                if(max < array[i].length){
+                    max = array[i].length
+                    ketQua =array[i];
+                    
+
+                }
+
+            }
+            return ketQua;
+        }
+        var mang = ["loan","thu trang","nguyen thi thu"];
+        document.write("phần tử dài nhất là" + timDoDaiMang(mang));
+    </script>
+</body>
+</html>
